@@ -1,0 +1,83 @@
+body {
+  background: url(images/photos.jpg) fixed no-repeat center center;
+  background-size: cover;
+  background-color: rgba(100, 100, 100, 0.1);
+  height: 100vh;
+}
+
+.navbar {
+  font: 'Arizonia', Helvetica, sans-serif;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.header {
+  font: 'Arizonia', Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.about {
+  border: solid #337ab7;
+}
+
+h3 {
+  font: 20 200px/1.3 'Arizonia', Helvetica, sans-serif;
+  color: white;
+}
+
+.me {
+  background-color: rgba(100, 100, 100, 0.7);
+  color: white;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#img {
+  padding: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .1s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: solid #337ab7;
+}
+
+.img-effects:hover #img {
+  opacity: 0.3;
+}
+
+.img-effects:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: grey;
+  color: white;
+  font: 20 200px/1.3 'Arizonia', Helvetica, sans-serif;
+  padding: 16px 32px;
+  width: 100%;
+  height: 100%;
+}
